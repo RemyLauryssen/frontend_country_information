@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 65vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+.flag {
+    max-width: 3vw;
+    margin: 0 1vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.outer-container {
+    width: 65vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.country-tiles {
+    display: flex;
+    width: 20vw;
+    height: 13vw;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    text-align: center;
+    margin: 3px 0;
+}
+
+.country-inner-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blue {
+    color: blue;
+    background-color: lightblue;
+}
+
+.green {
+    color: green;
+    background-color: lightgreen;
+}
+
+.red {
+    color: darkred;
+    background-color: lightcoral;
+}
+
+.yellow {
+    color: darkorange;
+    background-color: rgb(253, 253, 0);
+}
+
+.purple {
+    color: purple;
+    background-color: lightpink;
+}
+
+.default {
+    color: black;
+    background-color: silver;
+}
+
+.info-outer-container {
+    width: 65vw;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.info-inner-container {
+    max-width: 35vw;
+    border: 2px solid lightgrey;
+    border-radius: 2%;
+    padding: 0 6px;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
