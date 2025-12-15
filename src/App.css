@@ -102,3 +102,24 @@ form {
     display: flex;
     justify-content: center;
 }
+
+.search-button {
+    height: 40px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+.input-field {
+    height: 40px;
+    border-radius: 15px 0 0 15px;
+    border-right: none;
+}
+
+.input-button {
+    height: 40px;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    background-color: black;
+    border-left: none;
+}

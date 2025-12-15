@@ -20,7 +20,7 @@ function App() {
             const response = await axios.get('https://restcountries.com/v3.1/all?fields=name,flags,population,region');
             console.log(response.data);
             response.data.sort((a, b) => {
-                // Een aflopend inwonersaantal leek mij logischer, ook al stond het andersom in de opdracht
+                // Een aflopend inwoneraantal leek mij logischer, ook al stond het andersom in de opdracht
                 return b.population - a.population;
             });
             setCountries(response.data);
@@ -69,8 +69,8 @@ function App() {
                 <section>
                     <h2>World Regions</h2>
                     <div className="buttons">
-                    <button type="button" onClick={getCountries} disabled={loading}>List of all countries</button>
-                    <button type="button" onClick={resetCountryDisplay} disabled={loading}>Reset countries</button>
+                    <button type="button" className="search-button" onClick={getCountries} disabled={loading}>List of all countries</button>
+                    <button type="button" className="search-button" onClick={resetCountryDisplay} disabled={loading}>Reset display</button>
                     </div>
                     <div>
                         <ul className="outer-container">
@@ -97,11 +97,12 @@ function App() {
                         type="text"
                         name="search"
                         id="search-bar"
+                        className="input-field"
                         placeholder="i.e., France, Malaysia"
                         value={searchInput}
                         onChange={(e) => setSearchInput(e.target.value)}
                     />
-                    <button type="submit">Find country</button>
+                    <button type="submit" className="input-button">Find country</button>
                         <span>{error && <p>Something went wrong. Please try a different search</p>}</span>
                     </div>
 
